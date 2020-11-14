@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+}
+
+.world {
+    text-decoration: line-through;
+     }
+.punto {
+    color: blue;
+}
+.navegacion ul li {
+    list-style: none;
+        
+}
+.invitadas {   
+    list-style: none;
+}   
+
+.boton_conoce {
+    padding: 20px;
+    background-color: #00F3BB;
+    width: 226px;
+    height: 56px;
+    text-align: center;
+}
+.boton_conoce:hover {
+
+}
+
+.boton_conoce a {
+
+    text-decoration: none;    
+    color:#060A24;  
+}
