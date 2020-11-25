@@ -1,0 +1,89 @@
+@media screen and (min-width: 1000px) {
+    .navegacion {
+      input,
+      span {
+        display: none;
+      }      
+
+      ul {
+        margin-top: -5px;
+        margin-right: 60px;
+        position: static;
+        background: transparent;
+        height: auto;
+        opacity: 1;
+        
+      }
+      li {
+        padding: 5px 10px;
+        display: inline-block;        
+        &:hover {
+          background: transparent;
+          border-bottom: 2px solid black;
+        } 
+      } 
+
+      a {
+        color: #060A24; 
+        padding: 0;
+        line-height: 1;
+        &:hover {
+          color: inherit;
+        }
+      }
+    }    
+    
+  
+
+    header {      
+      padding-top: 16px;
+      height: 80px;
+      img {
+        width: 36px;
+        height: 36px;
+        margin-left: 100px;
+      
+      }  
+        
+      }
+
+    
+
+    .titular {
+      display: flex;
+      margin-left: 200px;      
+      margin-top: 120px;
+
+      
+    .hello {      
+      margin: 0px;
+      font-size: 64px;
+      line-height: 84px;
+    }  
+
+    .pale {
+      margin: 0;
+      font-size: 64px;
+      line-height: 84px;
+      margin-left: 12px;
+    }
+    
+
+}
+    // no funca!!!!
+    
+    .ifr {             
+      margin-bottom: 50px;
+      width: 584px;
+          }
+    .radios {                     
+      display: flex;  
+      flex-wrap: wrap;     
+      justify-content: center;
+      justify-content: space-around;
+     
+      
+    }
+
+
+}

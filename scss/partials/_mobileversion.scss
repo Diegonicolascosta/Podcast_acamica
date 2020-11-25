@@ -1,0 +1,102 @@
+header {
+    width: 100%;
+    height: 55px;
+    padding-top: 10px;
+    overflow: hidden;    
+    
+}
+   
+header img {
+    float: left;
+}
+header nav {
+    float: right;
+
+   
+
+}
+.navegacion {  
+    padding-top: 5px;  
+    ul {                 
+      position: absolute;
+      top: 50px; //50px es la altura del header.
+      right: 0;
+      width: 100%;
+      height: 0;
+      opacity: 0;      
+      background: #0000EC 100%; 
+      overflow: hidden;
+      
+    }    
+      
+    li {      
+      &:hover {         
+        background: #5a5a5a;        
+      }
+    }
+  
+    a {      
+      text-decoration:none;
+      color:#ffffff;
+      padding: 16px 5%;
+      line-height: 24px;      
+      display: block; //para que ocupe todo el ancho de las li
+  
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+  
+  /*checkbox transparente y en primer plano*/
+  input[type="checkbox"] {
+      display: block;
+      width: 40px; //el espacio que el usuario va a tener para hacer click
+      height: 32px; //el espacio que el usuario va a tener para hacer click
+      opacity: 0; //es para que no se vea el checkbox del navegador.
+      z-index: 2;
+      position: absolute;
+  }
+  /*span -lineas del menu hamburguesa-*/
+  .navegacion span {
+      display: block;      
+      width: 18px;
+      height: 2px;
+      margin-bottom: 4px;
+      position: relative;
+      background: #000;
+      z-index: 1;
+      transform-origin: 3px 0px;
+      transition: transform 0.5s ease,
+                  opacity 0.55s ease;
+  }
+  .navegacion span:nth-last-child(2) {
+      transform-origin: 0% 100%;
+  }
+  
+  /*animación del menu que se desplega*/
+  input[type="checkbox"]:checked ~ ul {
+    opacity: 1;
+    height: auto; //pasa de height 0 a lo que tenga de contenido
+  }
+
+
+ /* input[type="checkbox"] ~ ul li a {
+     pointer-events: none;
+  }
+  
+  input[type="checkbox"]:checked ~ ul li a {
+    pointer-events: all;
+  }*/
+
+  /*movimiento a cruz*/
+  input[type="checkbox"]:checked ~ span {
+      opacity: 1;
+      transform: rotate(45deg) translate(1px, 1.2px);
+  }
+  input[type="checkbox"]:checked ~ span:nth-last-child(3) {
+      opacity: 0;
+  }
+  input[type="checkbox"]:checked ~ span:nth-last-child(2) {
+      transform: rotate(-45deg) translate(1px, 0px);
+  }
