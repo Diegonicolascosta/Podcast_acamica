@@ -33,7 +33,10 @@
       }
     }    
     
-  
+    h2,#entrevistas h2 {      /* adapta titulos de seccion y boton conoce */
+      margin-left: 100px;      
+    }      
+      
 
     header {      
       padding-top: 16px;
@@ -41,20 +44,19 @@
       img {
         width: 36px;
         height: 36px;
-        margin-left: 100px;
+        margin-left: 10%;
       
       }  
         
       }
 
-    
+    /* titulo desktop */
 
     .titular {
       display: flex;
-      margin-left: 200px;      
-      margin-top: 120px;
-
-      
+      margin-left: 10%;      
+      margin-top: 50px;
+          
     .hello {      
       margin: 0px;
       font-size: 64px;
@@ -62,28 +64,110 @@
     }  
 
     .pale {
-      margin: 0;
+      margin: 0px;
       font-size: 64px;
       line-height: 84px;
       margin-left: 12px;
-    }
-    
+    }    
 
 }
-    // no funca!!!!
+
+    .parrafo_sub_titular {
+      max-width: 45%;
+      margin-left: 10%;
+      
+}
+
+
+  
+    /* episodios desktop */
     
     .ifr {             
       margin-bottom: 50px;
-      width: 584px;
+      width: 45%;
           }
-    .radios {                     
+    .radios {     
+      max-width: 100%;                 
       display: flex;  
       flex-wrap: wrap;     
       justify-content: center;
       justify-content: space-around;
      
       
+    } 
+
+    /* acomoda seccion nosotros */
+          
+    .telefono {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
     }
+    
+     .phone {     
+      max-width: 40%;
+     
+      
+    }
+    .texto_nosotros {    
+      padding-right: 40px;  
+      max-width: 45%;      
+    }
+    
+    /* acomoda seccion entrevistas */
+
+    .mujeres {  
+      display: flex;
+      flex-wrap: wrap;     
+    }
+    li {
+      display: flex;
+      flex-basis: calc(100% / 3);
+    
+    }
+
+    /* Acomoda seccion topicos */
+    
+    #topicos {
+
+    .iconos {
+      flex-basis: calc(100% / 4);
+    }
+
+    h2{
+      padding-bottom: 40px;
+    }
+    
+    .temas {
+      display: flex;   
+      justify-content: space-around;         
+  }
+  
+  
+} 
+
+footer {
+  flex-direction: row;
+  justify-content: space-between;
+  
+
+
+   .copy {   
+    margin: 0;
+    padding: 0;
+}
+
+.sociales ul {         
+    padding: 0;
+    li{      
+      margin-bottom: 0px;
+  }  
+
+
+   
+}
+}
 
 
 }

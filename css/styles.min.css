@@ -6,13 +6,14 @@
 }
 
 body {
+  max-width: 100%;
   font-family: 'IBM Plex Mono', monospace;
   margin: 0 auto;
 }
 
 .contenedor {
-  padding-right: 16px;
-  padding-left: 16px;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 
 ul {
@@ -44,8 +45,8 @@ h2 {
 /* parrafo sub titulo */
 .parrafo_sub_titular {
   font-size: 14px;
-  width: 100%;
-  margin: auto;
+  max-width: 100%;
+  margin: 0 auto;
   margin-bottom: 50px;
 }
 
@@ -177,13 +178,12 @@ section.novedades {
 */
 /* Seccion Episodios */
 section.epi {
-  height: 1203.5px;
   position: relative;
   margin-top: 60px;
   clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
-  padding-bottom: 140px;
+  padding-bottom: 100px;
   padding-top: 40px;
-  width: 100%;
+  max-width: 100%;
   background: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
 }
 
@@ -194,6 +194,7 @@ section.epi h2 {
 iframe {
   width: 100%;
   min-height: 232px;
+  margin-bottom: 5px;
 }
 
 /* Seccion nosotros */
@@ -201,7 +202,7 @@ iframe {
   position: relative;
   width: 100%;
   z-index: 1;
-  margin-top: -80px;
+  margin-top: -60px;
 }
 
 .telefono h2 {
@@ -217,10 +218,6 @@ iframe {
 }
 
 /* seccion entrevistas/invitados */
-#entrevistas h2 {
-  margin: 54px 0px 8px 0px;
-}
-
 .mujeres {
   padding: 0;
   margin: 0;
@@ -252,12 +249,11 @@ iframe {
 }
 
 .boton_conoce {
+  background-color: #00F3BB;
   font-size: 16px;
   font-weight: bold;
-  background-color: #00F3BB;
   text-decoration: none;
-  text-align: center;
-  padding: 16px 96px 16px 96px;
+  padding: 16px 85px 16px 85px;
   color: #060A24;
 }
 
@@ -270,8 +266,7 @@ iframe {
   font-weight: bold;
   background-color: #00F3BB;
   text-decoration: none;
-  text-align: center;
-  padding: 16px 43px 16px 43px;
+  padding: 16px 25px 16px 25px;
   color: #060A24;
 }
 
@@ -280,7 +275,7 @@ iframe {
 }
 
 section.novedades {
-  height: 341px;
+  max-width: 100%;
   clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
   background: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
   padding-top: 40px;
@@ -294,10 +289,31 @@ section.novedades h2 {
   letter-spacing: 0;
   line-height: 42px;
   margin-bottom: 50px;
+  margin-left: 0;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.copy {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.sociales ul {
+  padding: 0;
+}
+
+.sociales ul li {
+  padding: 5px 15px;
+  margin-bottom: 20px;
 }
 
 header {
-  width: 100%;
+  max-width: 100%;
   height: 55px;
   padding-top: 10px;
   overflow: hidden;
@@ -320,6 +336,7 @@ header nav {
   top: 50px;
   right: 0;
   width: 100%;
+  margin-top: 5px;
   height: 0;
   opacity: 0;
   background: #0000EC 100%;
@@ -345,8 +362,9 @@ header nav {
 /*checkbox transparente y en primer plano*/
 input[type="checkbox"] {
   display: block;
-  width: 40px;
-  height: 32px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
   opacity: 0;
   z-index: 2;
   position: absolute;
@@ -425,6 +443,10 @@ input[type="checkbox"]:checked ~ span:nth-last-child(2) {
   .navegacion a:hover {
     color: inherit;
   }
+  h2, #entrevistas h2 {
+    /* adapta titulos de seccion y boton conoce */
+    margin-left: 100px;
+  }
   header {
     padding-top: 16px;
     height: 80px;
@@ -432,12 +454,13 @@ input[type="checkbox"]:checked ~ span:nth-last-child(2) {
   header img {
     width: 36px;
     height: 36px;
-    margin-left: 100px;
+    margin-left: 10%;
   }
+  /* titulo desktop */
   .titular {
     display: flex;
-    margin-left: 200px;
-    margin-top: 120px;
+    margin-left: 10%;
+    margin-top: 50px;
   }
   .titular .hello {
     margin: 0px;
@@ -445,36 +468,73 @@ input[type="checkbox"]:checked ~ span:nth-last-child(2) {
     line-height: 84px;
   }
   .titular .pale {
-    margin: 0;
+    margin: 0px;
     font-size: 64px;
     line-height: 84px;
     margin-left: 12px;
   }
+  .parrafo_sub_titular {
+    max-width: 45%;
+    margin-left: 10%;
+  }
+  /* episodios desktop */
   .ifr {
     margin-bottom: 50px;
-    width: 584px;
+    width: 45%;
   }
   .radios {
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     justify-content: space-around;
   }
-}
-
-.copy {
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 20px;
-}
-
-.sociales ul {
-  margin: 0 auto;
-  display: inline-block;
-}
-
-.sociales ul li {
-  padding: 5px 15px;
-  margin-bottom: 20px;
+  /* acomoda seccion nosotros */
+  .telefono {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .phone {
+    max-width: 40%;
+  }
+  .texto_nosotros {
+    padding-right: 40px;
+    max-width: 45%;
+  }
+  /* acomoda seccion entrevistas */
+  .mujeres {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  li {
+    display: flex;
+    flex-basis: calc(100% / 3);
+  }
+  /* Acomoda seccion topicos */
+  #topicos .iconos {
+    flex-basis: calc(100% / 4);
+  }
+  #topicos h2 {
+    padding-bottom: 40px;
+  }
+  #topicos .temas {
+    display: flex;
+    justify-content: space-around;
+  }
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  footer .copy {
+    margin: 0;
+    padding: 0;
+  }
+  footer .sociales ul {
+    padding: 0;
+  }
+  footer .sociales ul li {
+    margin-bottom: 0px;
+  }
 }
 /*# sourceMappingURL=styles.min.css.map */

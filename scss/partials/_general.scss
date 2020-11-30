@@ -5,13 +5,14 @@
      
 
  body {       
+    max-width: 100%;
     font-family: 'IBM Plex Mono', monospace;        
     margin: 0 auto;
     }
 
 .contenedor {
-    padding-right: 16px;
-    padding-left: 16px;
+    padding-right: 5%;
+    padding-left: 5%;
 }
 
 ul {
@@ -47,9 +48,10 @@ h2 {
 /* parrafo sub titulo */
 .parrafo_sub_titular {    
     font-size: 14px;
-    width: 100%;
-    margin: auto;
+    max-width: 100%;
+    margin: 0 auto;
     margin-bottom: 50px;
+    
 }
 
 

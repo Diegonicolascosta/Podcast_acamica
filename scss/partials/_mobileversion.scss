@@ -1,5 +1,5 @@
 header {
-    width: 100%;
+    max-width: 100%;
     height: 55px;
     padding-top: 10px;
     overflow: hidden;    
@@ -11,17 +11,18 @@ header img {
 }
 header nav {
     float: right;
-
+    
    
 
 }
-.navegacion {  
-    padding-top: 5px;  
+.navegacion {      
+    padding-top: 5px;      
     ul {                 
       position: absolute;
-      top: 50px; //50px es la altura del header.
+      top: 50px; //50px es la altura del header.      
       right: 0;
       width: 100%;
+      margin-top: 5px;     
       height: 0;
       opacity: 0;      
       background: #0000EC 100%; 
@@ -50,20 +51,22 @@ header nav {
   
   /*checkbox transparente y en primer plano*/
   input[type="checkbox"] {
-      display: block;
-      width: 40px; //el espacio que el usuario va a tener para hacer click
-      height: 32px; //el espacio que el usuario va a tener para hacer click
+      display: block;    
+      right: 20px;
+      width: 30px; //el espacio que el usuario va a tener para hacer click
+      height: 30px; //el espacio que el usuario va a tener para hacer click
       opacity: 0; //es para que no se vea el checkbox del navegador.
       z-index: 2;
       position: absolute;
   }
   /*span -lineas del menu hamburguesa-*/
   .navegacion span {
-      display: block;      
+      display: block; 
+      //right: 5px;           
       width: 18px;
       height: 2px;
       margin-bottom: 4px;
-      position: relative;
+      position: relative;     
       background: #000;
       z-index: 1;
       transform-origin: 3px 0px;
