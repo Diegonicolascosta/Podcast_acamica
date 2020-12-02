@@ -1,0 +1,43 @@
+/* Titulo principal y parrafo */
+
+
+h2 {
+    font-family: 'IBM Plex Sans', sans-serif;       
+    
+    font-size: 36px;
+}
+
+#titulo {
+    margin-left: 4%;
+    margin-right: 4%;
+    text-align: center;
+    h1 {
+    text-align: start;
+    width: 75%;
+    margin: 0;
+    font-size: 36px;
+    font-family:  'IBM Plex Sans', sans-serif;        
+    font-weight: 600;    
+    line-height: 1;
+    margin-bottom: 5%;;
+    }
+
+span.world {
+    text-decoration: line-through;
+}
+span.punto {
+    color: blue;    
+} 
+
+/* parrafo sub titulo */
+.parrafo_sub_titular {     
+    text-align: start;   
+    font-size: 14px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    
+}   
+
+
+}

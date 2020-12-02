@@ -6,50 +6,21 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
   max-width: 100%;
   font-family: 'IBM Plex Mono', monospace;
-  margin: 0 auto;
-}
-
-.contenedor {
-  padding-right: 5%;
-  padding-left: 5%;
 }
 
 ul {
   list-style: none;
 }
 
-/* Titulo principal y parrafo */
 h2 {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 36px;
+  margin-left: 4%;
 }
 
-.titular {
-  font-family: 'IBM Plex Sans', sans-serif;
-  display: block;
-  font-size: 36px;
-  font-weight: 600;
-  line-height: 0;
-}
-
-.hello span.world {
-  text-decoration: line-through;
-}
-
-.pale span.punto {
-  color: blue;
-}
-
-/* parrafo sub titulo */
-.parrafo_sub_titular {
-  font-size: 14px;
-  max-width: 100%;
-  margin: 0 auto;
-  margin-bottom: 50px;
-}
-
+/* Titulo principal y parrafo */
 /* Seccion Episodios */
 /*
 
@@ -176,6 +147,46 @@ section.novedades {
 }
 
 */
+/* Titulo principal y parrafo */
+h2 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 36px;
+}
+
+#titulo {
+  margin-left: 4%;
+  margin-right: 4%;
+  text-align: center;
+  /* parrafo sub titulo */
+}
+
+#titulo h1 {
+  text-align: start;
+  width: 75%;
+  margin: 0;
+  font-size: 36px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 5%;
+}
+
+#titulo span.world {
+  text-decoration: line-through;
+}
+
+#titulo span.punto {
+  color: blue;
+}
+
+#titulo .parrafo_sub_titular {
+  text-align: start;
+  font-size: 14px;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
 /* Seccion Episodios */
 section.epi {
   position: relative;
@@ -189,6 +200,11 @@ section.epi {
 
 section.epi h2 {
   color: #ffffff;
+}
+
+.radios {
+  margin-left: 4%;
+  margin-right: 4%;
 }
 
 iframe {
@@ -206,14 +222,14 @@ iframe {
 }
 
 .telefono h2 {
-  margin: 0px 0px 8px 0px;
+  margin-left: 3%;
 }
 
 .telefono p {
+  margin-left: 4%;
+  margin-right: 4%;
   font-size: 14px;
   line-height: 22px;
-  margin: 0 auto;
-  letter-spacing: 0;
   margin-bottom: 14px;
 }
 
@@ -314,6 +330,8 @@ footer {
 
 header {
   max-width: 100%;
+  margin-right: 4%;
+  margin-left: 4%;
   height: 55px;
   padding-top: 10px;
   overflow: hidden;
@@ -344,7 +362,7 @@ header nav {
 }
 
 .navegacion li:hover {
-  background: #5a5a5a;
+  background: transparent;
 }
 
 .navegacion a {
@@ -362,9 +380,9 @@ header nav {
 /*checkbox transparente y en primer plano*/
 input[type="checkbox"] {
   display: block;
-  right: 20px;
-  width: 30px;
-  height: 30px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
   opacity: 0;
   z-index: 2;
   position: absolute;
@@ -478,16 +496,16 @@ input[type="checkbox"]:checked ~ span:nth-last-child(2) {
     margin-left: 10%;
   }
   /* episodios desktop */
-  .ifr {
-    margin-bottom: 50px;
-    width: 45%;
-  }
   .radios {
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     justify-content: space-around;
+  }
+  .ifr {
+    margin-bottom: 50px;
+    width: 45%;
   }
   /* acomoda seccion nosotros */
   .telefono {

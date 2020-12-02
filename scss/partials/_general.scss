@@ -1,22 +1,26 @@
 *,
  *:before,
- *:after {  box-sizing: border-box;    
+ *:after {         
+    box-sizing: border-box;   
+        
     }    
      
 
- body {       
-    max-width: 100%;
+ body {    
+    margin: 0;
+    padding: 0;   
+    max-width: 100%;    
     font-family: 'IBM Plex Mono', monospace;        
-    margin: 0 auto;
+    
     }
 
-.contenedor {
-    padding-right: 5%;
-    padding-left: 5%;
-}
 
 ul {
     list-style: none;    
+    }
+
+h2 {
+    margin-left: 4%;    
 }
 
 
@@ -24,35 +28,35 @@ ul {
 /* Titulo principal y parrafo */
 
 
-h2 {
-    font-family: 'IBM Plex Sans', sans-serif;       
+// h2 {
+//     font-family: 'IBM Plex Sans', sans-serif;       
     
-    font-size: 36px;
-}
+//     font-size: 36px;
+// }
 
-.titular {        
-    font-family:  'IBM Plex Sans', sans-serif;
-    display: block;
-    font-size: 36px;
-    font-weight: 600;
-    line-height: 0;
-}   
+// .titular {        
+//     font-family:  'IBM Plex Sans', sans-serif;
+//     display: block;
+//     font-size: 36px;
+//     font-weight: 600;
+//     line-height: 0;
+// }   
 
-.hello span.world {
-    text-decoration: line-through;
-}
-.pale span.punto {
-    color: blue;
-} 
+// .hello span.world {
+//     text-decoration: line-through;
+// }
+// .pale span.punto {
+//     color: blue;
+// } 
 
-/* parrafo sub titulo */
-.parrafo_sub_titular {    
-    font-size: 14px;
-    max-width: 100%;
-    margin: 0 auto;
-    margin-bottom: 50px;
+// /* parrafo sub titulo */
+// .parrafo_sub_titular {    
+//     font-size: 14px;
+//     max-width: 100%;
+//     margin: 0 auto;
+//     margin-bottom: 50px;
     
-}
+// }
 
 
 /* Seccion Episodios */
