@@ -1,5 +1,5 @@
 @media screen and (min-width: 1000px) {
-    .navegacion {
+    .navegacion {                     /* adaptacion menu navegación */
       input,
       span {
         display: none;
@@ -7,7 +7,7 @@
 
       ul {
         margin-top: -5px;
-        margin-right: 60px;
+        //margin-right: ;
         position: static;
         background: transparent;
         height: auto;
@@ -33,54 +33,53 @@
       }
     }    
     
-    h2,#entrevistas h2 {      /* adapta titulos de seccion y boton conoce */
-      margin-left: 100px;      
+    h2 {                             /* reset h2 margenes para desktop */
+      margin-left: 10%;       
+      font-size: 48px;    
     }      
       
 
-    header {      
+    header {  
+      margin-bottom: 4%;                      /* margenes navegacion*/
+      margin-left: 10%;
+      margin-right: 7%;
       padding-top: 16px;
       height: 80px;
       img {
         width: 36px;
         height: 36px;
-        margin-left: 10%;
-      
-      }  
-        
+        }          
+      }    
+
+      #titulo{
+        text-align: start;
+        h1{
+          max-width: 100%;
+          font-size: 60px;
+          margin-left: 6%;
+          margin-bottom: 1%;     
+        }
+
+        .parrafo_sub_titular {
+        margin: 0;
+        margin-left: 6%;
+        margin-bottom: 6%;
+        max-width: 50%;
+         
+        }
+        a{
+          margin-left: 6%;
+        }
       }
-
-    /* titulo desktop */
-
-    .titular {
-      display: flex;
-      margin-left: 10%;      
-      margin-top: 50px;
-          
-    .hello {      
-      margin: 0px;
-      font-size: 64px;
-      line-height: 84px;
-    }  
-
-    .pale {
-      margin: 0px;
-      font-size: 64px;
-      line-height: 84px;
-      margin-left: 12px;
-    }    
-
-}
-
-    .parrafo_sub_titular {
-      max-width: 45%;
-      margin-left: 10%;
-      
-}
-
-
-  
+ 
     /* episodios desktop */
+
+    section.epi {     
+      padding-bottom: 200px;   
+  
+  }   
+    
+  
 
     .radios {  
       max-width: 100%;                 
@@ -101,6 +100,7 @@
     /* acomoda seccion nosotros */
           
     .telefono {
+      margin-top: -80px;
       display: flex;
       align-items: center;
       justify-content: space-around;
@@ -114,7 +114,10 @@
     }
     .texto_nosotros {    
       padding-right: 40px;  
-      max-width: 45%;      
+      max-width: 60%;      
+      h2{
+         margin-left: 0;
+      }
     }
     
     /* acomoda seccion entrevistas */
@@ -149,7 +152,17 @@
   
 } 
 
+
+
+section.novedades {
+  h2 {
+    margin-left: 0;
+  }
+}
+
 footer {
+  margin-left: 5%;
+  margin-right: 5%;
   flex-direction: row;
   justify-content: space-between;
   

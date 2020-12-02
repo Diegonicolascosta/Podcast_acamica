@@ -1,20 +1,23 @@
 /* Seccion nosotros */
 
-.telefono {    
+.telefono {  
+    margin-left: 4%;
+    margin-right: 4%;
+
     .phone img {
        position: relative;
-       width: 100%;
+       max-width:100%;
        z-index: 1;
        margin-top: -60px;
     }
-    h2 {
-        margin-left: 3%;
+    // h2 {
+    //    margin-left: 4%;
     
-    }
+    // }
    
    p {         
-       margin-left: 4%;
-       margin-right: 4%;
+       //margin-left: 4%;
+       //margin-right: 4%;
        font-size: 14px; 
        line-height: 22px; 
        margin-bottom: 14px;
