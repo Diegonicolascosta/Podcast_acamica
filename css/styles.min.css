@@ -34,6 +34,7 @@ h2 {
 }
 
 #titulo h1 {
+  line-height: 1;
   text-align: start;
   width: 75%;
   margin: 0;
@@ -51,7 +52,7 @@ h2 {
   color: blue;
 }
 
-#titulo .parrafo_sub_titular {
+#titulo .parrafo_sub_titular1 {
   text-align: start;
   font-size: 14px;
   max-width: 100%;
@@ -59,7 +60,12 @@ h2 {
   margin-bottom: 50px;
 }
 
+#titulo .parrafo_sub_titular2 {
+  display: none;
+}
+
 section.epi {
+  /*diagonal azul*/
   clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
   background: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
   padding-top: 40px;
@@ -136,7 +142,7 @@ iframe {
 }
 
 .boton_conoce {
-  /* estilo gral botones*/
+  /*estilo gral botones*/
   background-color: #00f5bc;
   font-size: 0.875rem;
   font-weight: bold;
@@ -154,7 +160,7 @@ iframe {
 }
 
 .boton_escucha {
-  /* estilo gral botones*/
+  /*estilo gral botones*/
   background-color: #00f5bc;
   font-size: 0.875rem;
   font-weight: bold;
@@ -173,6 +179,7 @@ iframe {
 
 section.novedades {
   max-width: 100%;
+  /*diagonal azul*/
   clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
   background: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
   padding-top: 40px;
@@ -336,8 +343,11 @@ input[type="checkbox"]:checked ~ span:nth-last-child(2) {
     display: inline-block;
   }
   .navegacion li:hover {
-    background: transparent;
-    border-bottom: 2px solid black;
+    background: #00F3BB;
+    text-decoration: line-through;
+  }
+  .navegacion li:active {
+    background: rgba(6, 10, 36, 0.56);
   }
   .navegacion a {
     color: #060A24;
@@ -367,13 +377,17 @@ input[type="checkbox"]:checked ~ span:nth-last-child(2) {
   #titulo {
     text-align: start;
   }
+  #titulo .parrafo_sub_titular2 {
+    display: all;
+  }
   #titulo h1 {
     max-width: 100%;
     font-size: 60px;
     margin-left: 6%;
     margin-bottom: 1%;
   }
-  #titulo .parrafo_sub_titular {
+  #titulo .parrafo_sub_titular1 {
+    display: none;
     margin: 0;
     margin-left: 6%;
     margin-bottom: 6%;
@@ -381,6 +395,13 @@ input[type="checkbox"]:checked ~ span:nth-last-child(2) {
   }
   #titulo a {
     margin-left: 6%;
+  }
+  #titulo .parrafo_sub_titular2 {
+    display: block;
+    margin: 0;
+    margin-left: 6%;
+    margin-bottom: 6%;
+    max-width: 65%;
   }
   /* episodios desktop */
   section.epi {

@@ -7,7 +7,6 @@
 
       ul {
         margin-top: -5px;
-        //margin-right: ;
         position: static;
         background: transparent;
         height: auto;
@@ -18,10 +17,15 @@
         padding: 5px 10px;
         display: inline-block;        
         &:hover {
-          background: transparent;
-          border-bottom: 2px solid black;
+          background: #00F3BB;
+          text-decoration: line-through;         
+        }
+        &:active {
+          background:rgba(6,10,36,0.56);
         } 
-      } 
+          
+        } 
+       
 
       a {
         color: #060A24; 
@@ -53,48 +57,57 @@
 
       #titulo{
         text-align: start;
+        .parrafo_sub_titular2{
+          display:all;
+        }
+   
         h1{
           max-width: 100%;
           font-size: 60px;
           margin-left: 6%;
-          margin-bottom: 1%;     
-        }
-
-        .parrafo_sub_titular {
+          margin-bottom: 1%;          
+        
+      }
+        .parrafo_sub_titular1 {
+        display: none;
         margin: 0;
         margin-left: 6%;
         margin-bottom: 6%;
-        max-width: 50%;
-         
-        }
+        max-width: 50%;         
+        }        
+          
+        
         a{
           margin-left: 6%;
+        }       
+        .parrafo_sub_titular2{
+          display:block;
+          margin: 0;
+          margin-left: 6%;
+          margin-bottom: 6%;
+          max-width: 65%; 
         }
+   
+        
       }
- 
+      
     /* episodios desktop */
 
     section.epi {     
       padding-bottom: 200px;   
-  
-  }   
-    
-  
-
+    }  
     .radios {  
       max-width: 100%;                 
       display: flex;  
       flex-wrap: wrap;     
       justify-content: center;
-      justify-content: space-around;
-     
-      
+      justify-content: space-around; 
     } 
     
     .ifr {             
       margin-bottom: 50px;
       width: 45%;
-          }
+    }
     
 
     /* acomoda seccion nosotros */
@@ -104,13 +117,10 @@
       display: flex;
       align-items: center;
       justify-content: space-around;
-
     }
     
      .phone {     
-      max-width: 40%;
-     
-      
+      max-width: 40%;  
     }
     .texto_nosotros {    
       padding-right: 40px;  
