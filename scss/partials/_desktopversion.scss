@@ -1,3 +1,4 @@
+  
 @media screen and (min-width: 1000px) {
     .navegacion {                     /* adaptacion menu navegación */
       input,
@@ -39,7 +40,7 @@
     
     h2 {                             /* reset h2 margenes para desktop */
       margin-left: 10%;       
-      font-size: 3rem;    
+      font-size: 2.5rem;    
     }              
 
     header {  
@@ -66,7 +67,7 @@
    
         h1{          
           max-width: 100%;
-          font-size: 4rem;
+          font-size: 3rem;
           margin-left: 6%;
           margin-bottom: 1%;          
         
@@ -131,12 +132,12 @@
      .phone {     
       max-width: 40%;  
     }
-    .texto_nosotros {    
-      margin-top: 70px;
+    .texto_nosotros {       
       padding-right: 40px;  
       max-width: 40%;      
       h2{
-         margin-left: 0;
+        margin-top: 100px;
+         margin-left: 0;         
       }
     }
     
@@ -161,6 +162,7 @@
     }
 
     h2{      
+      text-align: start;
       padding-bottom: 40px;
     }
     
@@ -170,16 +172,15 @@
       display: flex;   
       justify-content: space-around;               
   }
-  
-  
+    
 } 
-
+/* seccion novedades */
 
 section.novedades {
   clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0% 100%);
   padding-top: 170px;
   padding-bottom: 170px;
-  h2 {
+  h2 {   
     margin-left: 0;
   }
 }
@@ -201,12 +202,34 @@ footer {
     padding: 0;
     li{      
       margin-bottom: 0px;
-  }  
-
-
-   
+  }    
 }
 }
 
+}
+@media screen and (min-width: 1200px) {   /* modificacion para 1440px */
+  #titulo {
+  h1 {
+      font-size: 4rem;
+  }
+}
+  h2{
+      font-size: 3rem;
+  }
+  p {
+    font-size: 1.25rem;
+  }
 
+  .telefono {
+
+    h2 {
+      margin-top: 200px;
+    }
+  }
+
+  footer {
+    .copy {
+      font-size: 1.25rem;
+    }
+  }
 }

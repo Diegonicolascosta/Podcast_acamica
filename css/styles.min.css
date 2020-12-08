@@ -110,6 +110,11 @@ iframe {
   margin-top: -60px;
 }
 
+.telefono h2 {
+  margin-bottom: -14px;
+  margin-left: 0;
+}
+
 .telefono p {
   line-height: 22px;
   margin-bottom: 14px;
@@ -335,6 +340,36 @@ input[type="checkbox"]:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(1px, 0px);
 }
 
+@media screen and (min-width: 500px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .telefono {
+    display: flex;
+    justify-content: space-around;
+  }
+  .telefono .phone {
+    max-width: 50%;
+  }
+  .telefono .texto_nosotros {
+    margin-top: -20px;
+    max-width: 40%;
+  }
+  #topicos h2 {
+    text-align: center;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  footer .copy {
+    margin: 0;
+    padding: 0;
+  }
+}
+
 @media screen and (min-width: 1000px) {
   .navegacion {
     /* adaptacion menu navegación */
@@ -372,7 +407,7 @@ input[type="checkbox"]:checked ~ span:nth-last-child(2) {
   h2 {
     /* reset h2 margenes para desktop */
     margin-left: 10%;
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   header {
     margin-bottom: 4%;
@@ -397,7 +432,7 @@ input[type="checkbox"]:checked ~ span:nth-last-child(2) {
   }
   #titulo h1 {
     max-width: 100%;
-    font-size: 4rem;
+    font-size: 3rem;
     margin-left: 6%;
     margin-bottom: 1%;
   }
@@ -448,11 +483,11 @@ input[type="checkbox"]:checked ~ span:nth-last-child(2) {
     max-width: 40%;
   }
   .texto_nosotros {
-    margin-top: 70px;
     padding-right: 40px;
     max-width: 40%;
   }
   .texto_nosotros h2 {
+    margin-top: 100px;
     margin-left: 0;
   }
   /* acomoda seccion entrevistas */
@@ -469,6 +504,7 @@ input[type="checkbox"]:checked ~ span:nth-last-child(2) {
     flex-basis: calc(100% / 5);
   }
   #topicos h2 {
+    text-align: start;
     padding-bottom: 40px;
   }
   #topicos .temas {
@@ -477,6 +513,7 @@ input[type="checkbox"]:checked ~ span:nth-last-child(2) {
     display: flex;
     justify-content: space-around;
   }
+  /* seccion novedades */
   section.novedades {
     clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0% 100%);
     padding-top: 170px;
@@ -500,6 +537,25 @@ input[type="checkbox"]:checked ~ span:nth-last-child(2) {
   }
   footer .sociales ul li {
     margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* modificacion para 1440px */
+  #titulo h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 1.25rem;
+  }
+  .telefono h2 {
+    margin-top: 200px;
+  }
+  footer .copy {
+    font-size: 1.25rem;
   }
 }
 /*# sourceMappingURL=styles.min.css.map */

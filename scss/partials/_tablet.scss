@@ -1,0 +1,43 @@
+
+@media screen and (min-width: 500px) {  
+    
+    h1{
+        font-size: 2.5rem;
+    }
+    
+.telefono{   
+    display: flex;     
+    justify-content: space-around;
+
+      .phone {
+          max-width: 50%;
+      }
+
+      .texto_nosotros {  
+        margin-top: -20px;         
+        max-width: 40%;                    
+        }
+    }
+
+    #topicos {    
+        h2 {
+            text-align: center;
+        }
+    }
+
+    footer {
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        .copy {   
+            margin: 0;
+            padding: 0;
+                }    
+    }
+        
+}   
+
+
+
