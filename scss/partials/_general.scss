@@ -14,6 +14,13 @@
     font-family: 'IBM Plex Mono', monospace;            
 }
 
+h1 {
+    font-size: 2.25rem;
+    font-family:  'IBM Plex Sans', sans-serif;        
+    font-weight: 600; 
+    line-height: 1;       
+}
+
 ul {
     list-style: none;    
 }
@@ -24,17 +31,9 @@ h2 {
     margin-left: 4%;    
 }
 
-@mixin botonstyles ($padding) {                     /*estilo gral botones*/ 
-    background-color: hsl(166, 100%, 48%);            
-    font-size: 0.875rem;  
-    font-weight: bold;     
-    text-decoration: none;   
-    color:#060A24; 
-    padding: $padding;
-    }
-
-@mixin bluediagonal {                               /*diagonal azul*/
-    clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
-    background:  linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-    padding-top: 40px;
+p {
+    font-size: 0.875rem;
 }
+
+
+

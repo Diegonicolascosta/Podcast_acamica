@@ -1,10 +1,12 @@
 
-section.epi {  
-    @include bluediagonal;       
+section.epi {    
+    clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
+    background:  linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    padding-top: 40px;        
     position: relative;  
     margin-top: 60px;
     padding-bottom: 100px;
-    max-width: 100%;
+    max-width: 100%;    
 
     h2 {                
         color: #ffffff;
@@ -19,6 +21,6 @@ section.epi {
 iframe {    
     width: 100%;
     min-height: 232px;
-    margin-bottom: 5px;
-    
+    margin-bottom: 5px;   
+    border:0; 
 }

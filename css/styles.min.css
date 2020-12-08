@@ -16,6 +16,13 @@ body {
   font-family: 'IBM Plex Mono', monospace;
 }
 
+h1 {
+  font-size: 2.25rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 600;
+  line-height: 1;
+}
+
 ul {
   list-style: none;
 }
@@ -26,6 +33,10 @@ h2 {
   margin-left: 4%;
 }
 
+p {
+  font-size: 0.875rem;
+}
+
 #titulo {
   margin-left: 4%;
   margin-right: 4%;
@@ -34,13 +45,9 @@ h2 {
 }
 
 #titulo h1 {
-  line-height: 1;
   text-align: start;
   width: 75%;
   margin: 0;
-  font-size: 2.25rem;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-weight: 600;
   margin-bottom: 5%;
 }
 
@@ -54,7 +61,7 @@ h2 {
 
 #titulo .parrafo_sub_titular1 {
   text-align: start;
-  font-size: 14px;
+  font-size: 0.875rem;
   max-width: 100%;
   margin: 0 auto;
   margin-bottom: 50px;
@@ -65,7 +72,6 @@ h2 {
 }
 
 section.epi {
-  /*diagonal azul*/
   clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
   background: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
   padding-top: 40px;
@@ -88,6 +94,7 @@ iframe {
   width: 100%;
   min-height: 232px;
   margin-bottom: 5px;
+  border: 0;
 }
 
 /* Seccion nosotros */
@@ -104,7 +111,6 @@ iframe {
 }
 
 .telefono p {
-  font-size: 14px;
   line-height: 22px;
   margin-bottom: 14px;
 }
@@ -126,16 +132,23 @@ iframe {
 /* Seccion topicos*/
 #topicos h2 {
   margin-top: 48px;
-  margin-bottom: 24px;
+  margin-bottom: 35px;
 }
 
 #topicos .temas {
+  margin-left: 4%;
+  margin-right: 4%;
   text-align: center;
+}
+
+#topicos .temas img {
+  width: 104px;
+  height: 104px;
 }
 
 #topicos p {
   font-weight: bold;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #060A24;
   letter-spacing: 0;
   max-width: 100%;
@@ -144,7 +157,7 @@ iframe {
 .boton_conoce {
   /*estilo gral botones*/
   background-color: #00f5bc;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: bold;
   text-decoration: none;
   color: #060A24;
@@ -162,7 +175,7 @@ iframe {
 .boton_escucha {
   /*estilo gral botones*/
   background-color: #00f5bc;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: bold;
   text-decoration: none;
   color: #060A24;
@@ -179,8 +192,7 @@ iframe {
 
 section.novedades {
   max-width: 100%;
-  /*diagonal azul*/
-  clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
+  clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
   background: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
   padding-top: 40px;
   padding-bottom: 80px;
@@ -360,7 +372,7 @@ input[type="checkbox"]:checked ~ span:nth-last-child(2) {
   h2 {
     /* reset h2 margenes para desktop */
     margin-left: 10%;
-    font-size: 48px;
+    font-size: 3rem;
   }
   header {
     margin-bottom: 4%;
@@ -374,6 +386,9 @@ input[type="checkbox"]:checked ~ span:nth-last-child(2) {
     width: 36px;
     height: 36px;
   }
+  p {
+    font-size: 1rem;
+  }
   #titulo {
     text-align: start;
   }
@@ -382,7 +397,7 @@ input[type="checkbox"]:checked ~ span:nth-last-child(2) {
   }
   #titulo h1 {
     max-width: 100%;
-    font-size: 60px;
+    font-size: 4rem;
     margin-left: 6%;
     margin-bottom: 1%;
   }
@@ -403,9 +418,14 @@ input[type="checkbox"]:checked ~ span:nth-last-child(2) {
     margin-bottom: 6%;
     max-width: 65%;
   }
+  .boton_conoce, .boton_escucha {
+    font-size: 1.125rem;
+  }
   /* episodios desktop */
   section.epi {
-    padding-bottom: 200px;
+    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+    padding-top: 150px;
+    padding-bottom: 220px;
   }
   .radios {
     max-width: 100%;
@@ -420,17 +440,17 @@ input[type="checkbox"]:checked ~ span:nth-last-child(2) {
   }
   /* acomoda seccion nosotros */
   .telefono {
-    margin-top: -80px;
+    margin-top: -100px;
     display: flex;
-    align-items: center;
     justify-content: space-around;
   }
   .phone {
     max-width: 40%;
   }
   .texto_nosotros {
+    margin-top: 70px;
     padding-right: 40px;
-    max-width: 60%;
+    max-width: 40%;
   }
   .texto_nosotros h2 {
     margin-left: 0;
@@ -446,14 +466,21 @@ input[type="checkbox"]:checked ~ span:nth-last-child(2) {
   }
   /* Acomoda seccion topicos */
   #topicos .iconos {
-    flex-basis: calc(100% / 4);
+    flex-basis: calc(100% / 5);
   }
   #topicos h2 {
     padding-bottom: 40px;
   }
   #topicos .temas {
+    margin-right: 120px;
+    margin-left: 120px;
     display: flex;
     justify-content: space-around;
+  }
+  section.novedades {
+    clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0% 100%);
+    padding-top: 170px;
+    padding-bottom: 170px;
   }
   section.novedades h2 {
     margin-left: 0;

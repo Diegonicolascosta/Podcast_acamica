@@ -1,4 +1,11 @@
-
+@mixin botonstyles ($padding) {                     /*estilo gral botones*/ 
+    background-color: hsl(166, 100%, 48%);            
+    font-size: 1rem;  
+    font-weight: bold;     
+    text-decoration: none;   
+    color:#060A24; 
+    padding: $padding;
+    }
 .boton_conoce {     
     @include botonstyles (16px 95px 16px 95px);
         &:hover {
