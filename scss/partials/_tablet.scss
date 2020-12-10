@@ -19,7 +19,27 @@
         }
     }
 
-    #topicos {    
+    .mujeres {  
+        display: flex;
+        flex-wrap: wrap;     
+      }
+      li {
+        display: flex;
+        flex-basis: calc(100% / 2);
+      
+      }
+
+    #topicos { 
+        .temas {        
+            display: flex;   
+            flex-wrap: wrap;               
+            justify-content: space-around;          
+        }
+        .iconos {
+            padding-top: 40px;
+            max-width: 40%;
+
+        }
         h2 {
             text-align: center;
         }

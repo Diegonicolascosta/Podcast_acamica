@@ -289,8 +289,8 @@ header nav {
 input[type="checkbox"] {
   display: block;
   right: 10px;
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   opacity: 0;
   z-index: 2;
   position: absolute;
@@ -319,13 +319,6 @@ input[type="checkbox"]:checked ~ ul {
   height: auto;
 }
 
-/* input[type="checkbox"] ~ ul li a {
-     pointer-events: none;
-  }
-  
-  input[type="checkbox"]:checked ~ ul li a {
-    pointer-events: all;
-  }*/
 /*movimiento a cruz*/
 input[type="checkbox"]:checked ~ span {
   opacity: 1;
@@ -353,6 +346,23 @@ input[type="checkbox"]:checked ~ span:nth-last-child(2) {
   }
   .telefono .texto_nosotros {
     margin-top: -20px;
+    max-width: 40%;
+  }
+  .mujeres {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  li {
+    display: flex;
+    flex-basis: calc(100% / 2);
+  }
+  #topicos .temas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #topicos .iconos {
+    padding-top: 40px;
     max-width: 40%;
   }
   #topicos h2 {
@@ -390,7 +400,7 @@ input[type="checkbox"]:checked ~ span:nth-last-child(2) {
     display: inline-block;
   }
   .navegacion li:hover {
-    background: #00F3BB;
+    color: #00F3BB;
     text-decoration: line-through;
   }
   .navegacion li:active {

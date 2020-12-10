@@ -55,8 +55,8 @@ header nav {
   input[type="checkbox"] {
       display: block;    
       right: 10px;
-      width: 20px; //el espacio que el usuario va a tener para hacer click
-      height: 20px; //el espacio que el usuario va a tener para hacer click
+      width: 40px; //el espacio que el usuario va a tener para hacer click
+      height: 40px; //el espacio que el usuario va a tener para hacer click
       opacity: 0; //es para que no se vea el checkbox del navegador.
       z-index: 2;
       position: absolute;
@@ -83,15 +83,6 @@ header nav {
     opacity: 1;
     height: auto; //pasa de height 0 a lo que tenga de contenido
   }
-
-
- /* input[type="checkbox"] ~ ul li a {
-     pointer-events: none;
-  }
-  
-  input[type="checkbox"]:checked ~ ul li a {
-    pointer-events: all;
-  }*/
 
   /*movimiento a cruz*/
   input[type="checkbox"]:checked ~ span {
